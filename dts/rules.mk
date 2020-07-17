@@ -12,10 +12,17 @@ DTBS += \
 endif
 ifeq ($(PROJECT), msm8953-secondary)
 DTBS += \
+	$(LOCAL_DIR)/sdm632-vsmart-casuarina.dtb \
+	$(LOCAL_DIR)/sdm450-vsmart-pine.dtb \
 	$(LOCAL_DIR)/sdm450-samsung-r04.dtb \
 	$(LOCAL_DIR)/msm8953-xiaomi-mido.dtb
 endif
 ifeq ($(PROJECT), msm8952-secondary)
 DTBS += \
-	$(LOCAL_DIR)/msm8940-xiaomi-santoni.dtb
+	$(LOCAL_DIR)/msm8940-xiaomi-santoni.dtb \
+	$(LOCAL_DIR)/msm8940-vsmart-jeice8940.dtb \
+	$(LOCAL_DIR)/msm8940-pmi8950_mtp.dtb \
+	$(LOCAL_DIR)/msm8937-vsmart-towa.dtb \
+	$(LOCAL_DIR)/msm8917-bq-jeice.dtb \
+	$(LOCAL_DIR)/qm215-vsmart-bamboo-sugarcane.dtb
 endif
